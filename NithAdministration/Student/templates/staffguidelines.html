@@ -1,0 +1,29 @@
+
+{% extends "layout.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'Elective/style1.css' %}">
+
+<h1>FOR staff</h1>
+<hr>
+<p>
+   For uploading the results download the following format <b>(prefer xls format)</b>:-
+   <a href=http://127.0.0.1:8000/Student/result/export/?>Download format</a>
+
+
+</p>
+<p>
+   After filling the xls file upload results here <b>(prefer xls format)</b>:-
+   <a href=http://127.0.0.1:8000/Student/result/import/>Upload Result</a>
+   
+
+</p>
+<p>
+    Enter Subject codes as mentioned <b>(prefer xls format)</b>:-
+    <a href=http://127.0.0.1:8000/Institution/subject/export/?>Download Subject Codes</a>
+    
+ </p>
+
+
+{% endblock content %}

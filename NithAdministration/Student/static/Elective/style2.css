@@ -1,0 +1,37 @@
+body {
+  background: #fbfbfb;
+  color: #222222;
+  margin-top: 5rem;
+}
+
+nav {
+  line-height: 1.25rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.bg-theme {
+  background-color: #6f7f8f;
+}
+
+.nav-link {
+  color: #e2dfff;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.card .card {
+  margin-bottom: 24px;
+}
+
+.card {
+  margin-bottom: 16px;
+}
+.navbar
+{
+  background-color: #447e9b;
+}

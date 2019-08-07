@@ -1,0 +1,133 @@
+{% extends "admin/change_list.html" %}
+{% load staticfiles %}
+{% block extrahead %}
+<!-- <link rel="shortcut icon" href="/static/logo1.png" /> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/admin/js/urlify.js"></script>
+    <script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script>
+        var randomColorGenerator = function () {
+            return '#' + (Math.random().toString(16) + '0000000').slice(2, 8);
+        };
+        var options = {
+            responsive: true,
+            maintainAspectRatio: true,
+            legend: {
+                position: 'left'
+            },
+            title: {
+                display: true
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            }
+        };
+        window.onload = function () {
+            
+            var ctx = document.getElementById("student-chart");
+            {% regroup cl.queryset|dictsort:"department" by department as department_list %}
+            var myBarChart = new Chart(ctx, {
+                type: 'horizontalBar',
+                data: {
+                    labels: [{% for department in department_list %}'{{ department.grouper }}',{% endfor %}],
+                    datasets: [{
+                        label: 'No Of Students Placed',
+                        data: [{% for department in department_list %}'{{ department.list|length }}',{% endfor %}],
+                        backgroundColor: [{% for department in department_list %}randomColorGenerator(),{% endfor %}]
+                    }]
+                }, options:{
+                legend: {
+                              position: 'left'
+                        },
+                    title: {
+                            display: true,
+                            text: '1.Placement ratio in each department'
+                        }
+                   }
+            });
+            var ctx = document.getElementById("company-chart");
+            {% regroup cl.queryset|dictsort:"company" by company as company_list %}
+            var lineChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: [{% for company in company_list %}'{{ company.grouper }}',{% endfor %}],
+                    datasets: [{
+                        label: 'company',
+                        data: [{% for company in company_list %}'{{ company.list|length }}',{% endfor %}],
+                        backgroundColor: [{% for company in company_list %}randomColorGenerator(),{% endfor %}]
+                    }]
+                },
+                options:{
+                legend: {
+                              position: 'left'
+                        },
+                    title: {
+                            display: true,
+                            text: '2.Company-wise placement analytics'
+                        }
+                   }
+            });
+            var ctx = document.getElementById("package-chart");
+            ctx.height = 70;
+            {% regroup cl.queryset|dictsort:"package" by package as package_list %}
+            var lineChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: [{% for package in package_list %}'{{ package.grouper }}',{% endfor %}],
+                    datasets: [{
+                        label: 'package',
+                        data: [{% for package in package_list %}'{{ package.list|length }}',{% endfor %}],
+                        backgroundColor: [{% for package in package_list %}randomColorGenerator(),{% endfor %}]
+                    }]
+                },
+                options:{
+                legend: {
+                              position: 'left'
+                        },
+                    title: {
+                            display: true,
+                            text: '3.Package analytics'
+                        }
+                   }
+            });
+        }
+        
+    </script>
+{% endblock %}
+{% block content %}
+
+<div id="content-main">
+    
+    <ul class="object-tools">
+        <li><a href='/Student/placements/import/' class="import_link">Import</a></li>        
+        <li><a href="/Student/placements/export/?" class="export_link">Export</a></li>             
+    </ul>
+
+     <h2> Analytics </h2>
+ 
+    <hr>
+    <div class="row">
+
+        <div class="col-sm-4">
+            <canvas id="student-chart" style="width: 100px !important;"></canvas>
+        </div>
+        <div class="col-sm-4">
+            <canvas id="company-chart" style="width: 100px !important;"></canvas>
+        </div>
+        
+        <div class="col-sm-4">
+                <canvas id="package-chart" style="width: 100px !important;"></canvas>
+         </div>
+            
+    </div>
+    {{ block.super }}
+{% endblock %}

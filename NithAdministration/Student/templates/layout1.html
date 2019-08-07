@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'Elective/style1.css' %}">
+
+<h1>About Site</h1>
+<hr>
+<p>
+        The site is for NIT Kurukshetra to keep track of their student records like personal, contact, result, placement, other exams, co-curricular activities details etc. Dynamic analytics are also present on the site.
+</p>
+
+<p>
+    Following are the <b>Analytics</b> of various activities of NIT Kurukshetra Students. Use <b>Filters </b>and <b>Search</b> options according to requirements for better analytics. 
+</p>
+
+<p>
+<ul>
+
+    <li><a href=http://127.0.0.1:8000/Student/student/>Student Profile</a></li>
+    <li><a href=http://127.0.0.1:8000/Student/result/>Result </a></li>
+    <li><a href=http://127.0.0.1:8000/Student/placements/>Placements</a></li>
+    <li><a href=http://127.0.0.1:8000/Student/otherexam/>OtherExam</a></li>
+    <li><a href=http://127.0.0.1:8000/Student/suggestions/>Suggestions</a></li>
+
+
+</ul>
+</p>
+{% endblock content %}

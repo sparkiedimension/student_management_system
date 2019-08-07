@@ -1,0 +1,36 @@
+id,courseCode,couseName,credit,department
+35,CSS-228,Data Structure Lab*,2,1
+34,CSS-227,Operating System Lab*,1,1
+33,CSS-226,Computer Organization Lab*,1,1
+32,CSS-225,Basic Environmental Science and Engineering*,3,1
+31,CSS-224,Theory of Computation*,3,1
+30,CSS-223,System Software,3,1
+29,CSS-222,Data Structure*,3,1
+28,CSS-221,Operating System*,3,1
+27,CSS-220,Computer Organization*,3,1
+26,CSS-219,Digital Electronics & Logic Design Lab*,1,1
+25,CSS-218,Microprocessor and Interfacing Lab*,1,1
+24,CSS-217,Computer Graphics Lab*,1,1
+23,CSS-216,Object Oriented Paradigm Lab*,1,1
+22,CSS-215,Digital Electronics & Logic Design*,3,1
+21,CSS-214,Microprocessor and Interfacing*,3,1
+20,CSS-213,Computer Graphics*,3,1
+19,CSS-212,Object Oriented Paradigm*,3,1
+18,CSS-211,Discrete Structure*,3,1
+17,CSS-210,Probability & Queuing Models,3,1
+16,CSS-127,Engineering Graphics*,3,1
+15,CSS-126,Communication Skills Lab*,1,1
+14,CSS-125,Chemistry Lab*,1,1
+13,CSS-124,Basic Electrical Engineering*,3,1
+12,CSS-123,Communication Skills,3,1
+11,CSS-122,Chemistry for Computer Engineers*,3,1
+10,CSS-121,Engineering Mathematics-II*,3,1
+9,CSS-119,Basic Electronics Engineering Lab*,1,1
+8,CSS-118,Computer Fundamentals & Programming Lab*,1,1
+7,CSS-117,Physics Lab*,1,1
+6,CSS-116,Engineering Economics and Management,3,1
+5,CSS-115,Basic Electronics Engineering,3,1
+4,CSS-114,Computer Workshop,2,1
+3,CSS-113,Computer Fundamentals & Programming*,3,1
+2,CSS-112,Physics for Computer Engineers*,3,1
+1,CSS-111,Engineering Mathematics-I,3,1

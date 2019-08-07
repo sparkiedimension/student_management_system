@@ -1,0 +1,598 @@
+id,district,state,country
+,Kupwara,1,1
+,Baramula,1,1
+,Srinagar,1,1
+,Badgam,1,1
+,Pulwama,1,1
+,Anantnag,1,1
+,Leh (Ladakh),1,1
+,Kargil,1,1
+,Doda,1,1
+,Udhampur,1,1
+,Punch,1,1
+,Rajauri,1,1
+,Jammu,1,1
+,Kathua,1,1
+,Chamba,2,1
+,Kangra,2,1
+,Lahul & Spiti,2,1
+,Kullu,2,1
+,Mandi,2,1
+,Hamirpur,2,1
+,Una,2,1
+,Bilaspur,2,1
+,Solan,2,1
+,Sirmaur,2,1
+,Shimla,2,1
+,Kinnaur,2,1
+,Gurdaspur,3,1
+,Amritsar,3,1
+,Kapurthala,3,1
+,Jalandhar,3,1
+,Hoshiarpur,3,1
+,Nawanshahr *,3,1
+,Rupnagar,3,1
+,Fatehgarh Sahib *,3,1
+,Ludhiana,3,1
+,Moga *,3,1
+,Firozpur,3,1
+,Muktsar *,3,1
+,Faridkot,3,1
+,Bathinda,3,1
+,Mansa *,3,1
+,Sangrur,3,1
+,Patiala,3,1
+,Chandigarh,4,1
+,Uttarkashi,5,1
+,Chamoli,5,1
+,Rudraprayag *,5,1
+,Tehri Garhwal,5,1
+,Dehradun,5,1
+,Garhwal,5,1
+,Pithoragarh,5,1
+,Bageshwar,5,1
+,Almora,5,1
+,Champawat,5,1
+,Nainital,5,1
+,Udham Singh Nagar *,5,1
+,Hardwar,5,1
+,Panchkula *,6,1
+,Ambala,6,1
+,Yamunanagar,6,1
+,Kurukshetra,6,1
+,Kaithal,6,1
+,Karnal,6,1
+,Panipat,6,1
+,Sonipat,6,1
+,Jind,6,1
+,Fatehabad *,6,1
+,Sirsa,6,1
+,Hisar,6,1
+,Bhiwani,6,1
+,Rohtak,6,1
+,Jhajjar *,6,1
+,Mahendragarh,6,1
+,Rewari,6,1
+,Gurgaon,6,1
+,Faridabad,6,1
+,North West   *,7,1
+,North   *,7,1
+,North East   *,7,1
+,East   *,7,1
+,New Delhi,7,1
+,Central  *,7,1
+,West   *,7,1
+,South West   *,7,1
+,South  *,7,1
+,Ganganagar,8,1
+,Hanumangarh *,8,1
+,Bikaner,8,1
+,Churu,8,1
+,Jhunjhunun,8,1
+,Alwar,8,1
+,Bharatpur,8,1
+,Dhaulpur,8,1
+,Karauli *,8,1
+,Sawai Madhopur,8,1
+,Dausa *,8,1
+,Jaipur,8,1
+,Sikar,8,1
+,Nagaur,8,1
+,Jodhpur,8,1
+,Jaisalmer,8,1
+,Barmer,8,1
+,Jalor,8,1
+,Sirohi,8,1
+,Pali,8,1
+,Ajmer,8,1
+,Tonk,8,1
+,Bundi,8,1
+,Bhilwara,8,1
+,Rajsamand *,8,1
+,Udaipur,8,1
+,Dungarpur,8,1
+,Banswara,8,1
+,Chittaurgarh,8,1
+,Kota,8,1
+,Baran *,8,1
+,Jhalawar,8,1
+,Saharanpur,9,1
+,Muzaffarnagar,9,1
+,Bijnor,9,1
+,Moradabad,9,1
+,Rampur,9,1
+,Jyotiba Phule Nagar *,9,1
+,Meerut,9,1
+,Baghpat *,9,1
+,Ghaziabad,9,1
+,Gautam Buddha Nagar *,9,1
+,Bulandshahr,9,1
+,Aligarh,9,1
+,Hathras *,9,1
+,Mathura,9,1
+,Agra,9,1
+,Firozabad,9,1
+,Etah,9,1
+,Mainpuri,9,1
+,Budaun,9,1
+,Bareilly,9,1
+,Pilibhit,9,1
+,Shahjahanpur,9,1
+,Kheri,9,1
+,Sitapur,9,1
+,Hardoi,9,1
+,Unnao,9,1
+,Lucknow,9,1
+,Rae Bareli,9,1
+,Farrukhabad,9,1
+,Kannauj *,9,1
+,Etawah,9,1
+,Auraiya *,9,1
+,Kanpur Dehat,9,1
+,Kanpur Nagar,9,1
+,Jalaun ,9,1
+,Jhansi,9,1
+,Lalitpur,9,1
+,Hamirpur,9,1
+,Mahoba *,9,1
+,Banda,9,1
+,Chitrakoot *,9,1
+,Fatehpur,9,1
+,Pratapgarh,9,1
+,Kaushambi *,9,1
+,Allahabad ,9,1
+,Barabanki,9,1
+,Faizabad,9,1
+,Ambedkar Nagar *,9,1
+,Sultanpur,9,1
+,Bahraich,9,1
+,Shrawasti *,9,1
+,Balrampur *,9,1
+,Gonda,9,1
+,Siddharthnagar,9,1
+,Basti,9,1
+,Sant Kabir Nagar *,9,1
+,Maharajganj,9,1
+,Gorakhpur,9,1
+,Kushinagar *,9,1
+,Deoria,9,1
+,Azamgarh,9,1
+,Mau,9,1
+,Ballia,9,1
+,Jaunpur,9,1
+,Ghazipur,9,1
+,Chandauli *,9,1
+,Varanasi,9,1
+,Sant Ravidas Nagar *,9,1
+,Mirzapur,9,1
+,Sonbhadra,9,1
+,Pashchim Champaran,10,1
+,Purba Champaran,10,1
+,Sheohar *,10,1
+,Sitamarhi,10,1
+,Madhubani,10,1
+,Supaul *,10,1
+,Araria,10,1
+,Kishanganj,10,1
+,Purnia,10,1
+,Katihar,10,1
+,Madhepura,10,1
+,Saharsa,10,1
+,Darbhanga,10,1
+,Muzaffarpur,10,1
+,Gopalganj,10,1
+,Siwan,10,1
+,Saran,10,1
+,Vaishali,10,1
+,Samastipur,10,1
+,Begusarai,10,1
+,Khagaria,10,1
+,Bhagalpur,10,1
+,Banka *,10,1
+,Munger,10,1
+,Lakhisarai *,10,1
+,Sheikhpura *,10,1
+,Nalanda,10,1
+,Patna,10,1
+,Bhojpur,10,1
+,Buxar *,10,1
+,Kaimur (Bhabua) *,10,1
+,Rohtas,10,1
+,Jehanabad ,10,1
+,Aurangabad,10,1
+,Gaya,10,1
+,Nawada,10,1
+,Jamui *,10,1
+,North ,11,1
+,West,11,1
+,South,11,1
+,East,11,1
+,Tawang,12,1
+,West Kameng,12,1
+,East Kameng,12,1
+,Papum Pare *,12,1
+,Lower Subansiri,12,1
+,Upper Subansiri,12,1
+,West Siang,12,1
+,East Siang,12,1
+,Upper Siang *,12,1
+,Dibang Valley,12,1
+,Lohit,12,1
+,Changlang,12,1
+,Tirap,12,1
+,Mon,13,1
+,Tuensang,13,1
+,Mokokchung,13,1
+,Zunheboto,13,1
+,Wokha,13,1
+,Dimapur *,13,1
+,Kohima,13,1
+,Phek,13,1
+,MANIPUR,13,1
+,Senapati,13,1
+,Tamenglong,13,1
+,Churachandpur,13,1
+,Bishnupur,13,1
+,Thoubal,13,1
+,Imphal West,13,1
+,Imphal East *,13,1
+,Ukhrul,13,1
+,Chandel,13,1
+,Mamit *,14,1
+,Kolasib *,14,1
+,Aizawl,14,1
+,Champhai *,14,1
+,Serchhip *,14,1
+,Lunglei,14,1
+,Lawngtlai,14,1
+,Saiha *,14,1
+,West Tripura ,15,1
+,South Tripura ,15,1
+,Dhalai  *,15,1
+,North Tripura ,15,1
+,West Garo Hills,16,1
+,East Garo Hills,16,1
+,South Garo Hills *,16,1
+,West Khasi Hills,16,1
+,Ri Bhoi  *,16,1
+,East Khasi Hills,16,1
+,Jaintia Hills,16,1
+,Kokrajhar,17,1
+,Dhubri,17,1
+,Goalpara,17,1
+,Bongaigaon,17,1
+,Barpeta,17,1
+,Kamrup,17,1
+,Nalbari,17,1
+,Darrang,17,1
+,Marigaon,17,1
+,Nagaon,17,1
+,Sonitpur,17,1
+,Lakhimpur,17,1
+,Dhemaji,17,1
+,Tinsukia,17,1
+,Dibrugarh,17,1
+,Sibsagar,17,1
+,Jorhat,17,1
+,Golaghat,17,1
+,Karbi Anglong,17,1
+,North Cachar Hills,17,1
+,Cachar,17,1
+,Karimganj,17,1
+,Hailakandi,17,1
+,Darjiling ,18,1
+,Jalpaiguri ,18,1
+,Koch Bihar ,18,1
+,Uttar Dinajpur,18,1
+,Dakshin Dinajpur *,18,1
+,Maldah ,18,1
+,Murshidabad ,18,1
+,Birbhum,18,1
+,Barddhaman ,18,1
+,Nadia ,18,1
+,North Twenty Four Parganas,18,1
+,Hugli ,18,1
+,Bankura ,18,1
+,Puruliya,18,1
+,Medinipur ,18,1
+,Haora ,18,1
+,Kolkata,18,1
+,South  Twenty Four Parganas,18,1
+,Garhwa *,19,1
+,Palamu,19,1
+,Chatra *,19,1
+,Hazaribag,19,1
+,Kodarma *,19,1
+,Giridih,19,1
+,Deoghar,19,1
+,Godda,19,1
+,Sahibganj,19,1
+,Pakaur *,19,1
+,Dumka,19,1
+,Dhanbad,19,1
+,Bokaro *,19,1
+,Ranchi,19,1
+,Lohardaga,19,1
+,Gumla,19,1
+,Pashchimi Singhbhum,19,1
+,Purbi Singhbhum,19,1
+,ORISSA,19,1
+,Bargarh  *,19,1
+,Jharsuguda  *,19,1
+,Sambalpur,19,1
+,Debagarh  *,19,1
+,Sundargarh,19,1
+,Kendujhar,19,1
+,Mayurbhanj,19,1
+,Baleshwar,19,1
+,Bhadrak  *,19,1
+,Kendrapara *,19,1
+,Jagatsinghapur  *,19,1
+,Cuttack,19,1
+,Jajapur  *,19,1
+,Dhenkanal,19,1
+,Anugul  *,19,1
+,Nayagarh  *,19,1
+,Khordha  *,19,1
+,Puri,19,1
+,Ganjam,19,1
+,Gajapati  *,19,1
+,Kandhamal,19,1
+,Baudh  *,19,1
+,Sonapur  *,19,1
+,Balangir,19,1
+,Nuapada  *,19,1
+,Kalahandi,19,1
+,Rayagada  *,19,1
+,Nabarangapur  *,19,1
+,Koraput,19,1
+,Malkangiri  *,19,1
+,Koriya *,20,1
+,Surguja,20,1
+,Jashpur *,20,1
+,Raigarh,20,1
+,Korba *,20,1
+,Janjgir - Champa*,20,1
+,Bilaspur,20,1
+,Kawardha *,20,1
+,Rajnandgaon,20,1
+,Durg,20,1
+,Raipur,20,1
+,Mahasamund *,20,1
+,Dhamtari *,20,1
+,Kanker *,20,1
+,Baster,20,1
+,Dantewada*,20,1
+,Sheopur *,21,1
+,Morena,21,1
+,Bhind,21,1
+,Gwalior,21,1
+,Datia,21,1
+,Shivpuri,21,1
+,Guna,21,1
+,Tikamgarh,21,1
+,Chhatarpur,21,1
+,Panna,21,1
+,Sagar,21,1
+,Damoh,21,1
+,Satna,21,1
+,Rewa,21,1
+,Umaria *,21,1
+,Shahdol,21,1
+,Sidhi,21,1
+,Neemuch *,21,1
+,Mandsaur,21,1
+,Ratlam,21,1
+,Ujjain,21,1
+,Shajapur,21,1
+,Dewas,21,1
+,Jhabua,21,1
+,Dhar,21,1
+,Indore,21,1
+,West Nimar,21,1
+,Barwani *,21,1
+,East Nimar,21,1
+,Rajgarh,21,1
+,Vidisha,21,1
+,Bhopal,21,1
+,Sehore,21,1
+,Raisen,21,1
+,Betul,21,1
+,Harda *,21,1
+,Hoshangabad,21,1
+,Katni *,21,1
+,Jabalpur,21,1
+,Narsimhapur,21,1
+,Dindori *,21,1
+,Mandla,21,1
+,Chhindwara,21,1
+,Seoni,21,1
+,Balaghat,21,1
+,Kachchh,22,1
+,Banas Kantha,22,1
+,Patan  *,22,1
+,Mahesana,22,1
+,Sabar Kantha,22,1
+,Gandhinagar,22,1
+,Ahmadabad,22,1
+,Surendranagar,22,1
+,Rajkot,22,1
+,Jamnagar,22,1
+,Porbandar  *,22,1
+,Junagadh,22,1
+,Amreli,22,1
+,Bhavnagar,22,1
+,Anand  *,22,1
+,Kheda,22,1
+,Panch Mahals,22,1
+,Dohad  *,22,1
+,Vadodara,22,1
+,Narmada  *,22,1
+,Bharuch,22,1
+,Surat,22,1
+,The Dangs,22,1
+,Navsari  *,22,1
+,Valsad,22,1
+,Diu,23,1
+,Daman,23,1
+,Dadra & Nagar Haveli,24,1
+,Nandurbar *,25,1
+,Dhule,25,1
+,Jalgaon,25,1
+,Buldana,25,1
+,Akola,25,1
+,Washim *,25,1
+,Amravati,25,1
+,Wardha,25,1
+,Nagpur,25,1
+,Bhandara,25,1
+,Gondiya *,25,1
+,Gadchiroli,25,1
+,Chandrapur,25,1
+,Yavatmal,25,1
+,Nanded,25,1
+,Hingoli *,25,1
+,Parbhani,25,1
+,Jalna,25,1
+,Aurangabad,25,1
+,Nashik,25,1
+,Thane,25,1
+,Mumbai (Suburban) *,25,1
+,Mumbai,25,1
+,Raigarh,25,1
+,Pune,25,1
+,Ahmadnagar,25,1
+,Bid,25,1
+,Latur,25,1
+,Osmanabad,25,1
+,Solapur,25,1
+,Satara,25,1
+,Ratnagiri,25,1
+,Sindhudurg,25,1
+,Kolhapur,25,1
+,Sangli,25,1
+,Adilabad,26,1
+,Nizamabad,26,1
+,Karimnagar,26,1
+,Medak,26,1
+,Hyderabad,26,1
+,Rangareddi,26,1
+,Mahbubnagar,26,1
+,Nalgonda,26,1
+,Warangal,26,1
+,Khammam,26,1
+,Srikakulam,26,1
+,Vizianagaram,26,1
+,Visakhapatnam,26,1
+,East Godavari,26,1
+,West Godavari,26,1
+,Krishna,26,1
+,Guntur,26,1
+,Prakasam,26,1
+,Nellore,26,1
+,Cuddapah,26,1
+,Kurnool,26,1
+,Anantapur,26,1
+,Chittoor,26,1
+,Belgaum,27,1
+,Bagalkot *,27,1
+,Bijapur,27,1
+,Gulbarga,27,1
+,Bidar,27,1
+,Raichur,27,1
+,Koppal *,27,1
+,Gadag *,27,1
+,Dharwad,27,1
+,Uttara Kannada,27,1
+,Haveri *,27,1
+,Bellary,27,1
+,Chitradurga,27,1
+,Davangere*,27,1
+,Shimoga,27,1
+,Udupi *,27,1
+,Chikmagalur,27,1
+,Tumkur,27,1
+,Kolar,27,1
+,Bangalore,27,1
+,Bangalore Rural,27,1
+,Mandya,27,1
+,Hassan,27,1
+,Dakshina Kannada,27,1
+,Kodagu,27,1
+,Mysore,27,1
+,Chamrajnagar*,27,1
+,GOA,27,1
+,North Goa ,27,1
+,South Goa,27,1
+,Lakshadweep,28,1
+,Kasaragod,29,1
+,Kannur,29,1
+,Wayanad,29,1
+,Kozhikode,29,1
+,Malappuram,29,1
+,Palakkad,29,1
+,Thrissur,29,1
+,Ernakulam,29,1
+,Idukki,29,1
+,Kottayam,29,1
+,Alappuzha,29,1
+,Pathanamthitta,29,1
+,Kollam,29,1
+,Thiruvananthapuram,29,1
+,Thiruvallur,30,1
+,Chennai,30,1
+,Kancheepuram,30,1
+,Vellore,30,1
+,Dharmapuri,30,1
+,Tiruvannamalai,30,1
+,Viluppuram,30,1
+,Salem,30,1
+,Namakkal   *,30,1
+,Erode,30,1
+,The Nilgiris,30,1
+,Coimbatore,30,1
+,Dindigul,30,1
+,Karur  *,30,1
+,Tiruchirappalli,30,1
+,Perambalur  *,30,1
+,Ariyalur  *,30,1
+,Cuddalore,30,1
+,Nagapattinam  *,30,1
+,Thiruvarur,30,1
+,Thanjavur,30,1
+,Pudukkottai,30,1
+,Sivaganga,30,1
+,Madurai,30,1
+,Theni  *,30,1
+,Virudhunagar,30,1
+,Ramanathapuram,30,1
+,Thoothukkudi,30,1
+,Tirunelveli ,30,1
+,Kanniyakumari,30,1
+,PONDICHERRY,30,1
+,Yanam,30,1
+,Pondicherry,30,1
+,Mahe,30,1
+,Karaikal,30,1
+,Andamans,31,1
+,Nicobars,31,1

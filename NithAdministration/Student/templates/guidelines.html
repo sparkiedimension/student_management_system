@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'Elective/style1.css' %}">
+
+<h1>FOR Admin</h1>
+<hr>
+<p>
+   For filling or uploading any details related to students go to admin section :-
+   <a href=http://127.0.0.1:8000/>Click on this link</a>
+
+
+</p>
+<p>
+   <b>Various details</b> that can be filled are:-
+   <p>1.<b>For Institution:-</b></p>
+   <ul>
+   
+      <li><a href=http://127.0.0.1:8000/Institution/degree/>Degree</a></li>
+      <li><a href=http://127.0.0.1:8000/Institution/subject/>Result </a></li>
+  </ul>
+
+  <p>2.<b>For Students:-</b></p>
+   <ul>
+   
+      <li><a href=http://127.0.0.1:8000/Student/activity/>Activity</a></li>
+      <li><a href=http://127.0.0.1:8000/Student/board/>Board</a></li>
+      <li><a href=http://127.0.0.1:8000/Student/category/>Category</a></li>
+      <li><a href=http://127.0.0.1:8000/Student/student/>Student</a></li>
+      <li><a href=http://127.0.0.1:8000/Student/placements/>Placements</a></li>
+      <li><a href=http://127.0.0.1:8000/Student/otherexam/>Otherexam</a></li>
+      <li><a href=http://127.0.0.1:8000/Student/participation/>Participation</a></li>
+  </ul>
+
+  <p>3.<b>For Address:-</b></p>
+   <ul>
+   
+      <li><a href=http://127.0.0.1:8000/Address/country/>Country</a></li>
+      <li><a href=http://127.0.0.1:8000/Address/state/>State</a></li>
+      <li><a href=http://127.0.0.1:8000/Address/district/>District</a></li>
+      <li><a href=http://127.0.0.1:8000/Address/city/>City</a></li>
+      
+  </ul>
+</p>
+
+
+{% endblock content %}

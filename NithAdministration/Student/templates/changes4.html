@@ -1,0 +1,77 @@
+{% extends "admin/change_list.html" %}
+{% load staticfiles %}
+{% block extrahead %}
+<!-- <link rel="shortcut icon" href="/static/logo1.png" /> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/admin/js/urlify.js"></script>
+    <script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script>
+        var randomColorGenerator = function () {
+            return '#' + (Math.random().toString(16) + '0000000').slice(2, 8);
+        };
+        var options = {
+            responsive: true,
+            maintainAspectRatio: true,
+            legend: {
+                position: 'left'
+            },
+            title: {
+                display: true
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            }
+        };
+        window.onload = function () {
+
+            var ctx = document.getElementById("activityName-chart");
+            {% regroup cl.queryset|dictsort:"activityName" by activityName as activityName_list %}
+            var lineChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: [{% for activityName in activityName_list %}'{{ activityName.grouper }}',{% endfor %}],
+                    datasets: [{
+                        label: 'activityName',
+                        data: [{% for activityName in activityName_list %}'{{ activityName.list|length }}',{% endfor %}],
+                        backgroundColor: [{% for activityName in activityName_list %}randomColorGenerator(),{% endfor %}]
+                  
+                    }]
+                },
+                options: options
+                    
+       
+            
+            });
+           
+    </script>
+{% endblock %}
+{% block content %}
+
+<div id="content-main">
+    <ul class="object-tools">
+        <li><a href='/Student/otherexam/import/' class="import_link">Import</a></li>
+        <li><a href="/Student/otherexam/export/?" class="export_link">Export</a></li>            
+    </ul>
+
+     <h2> Analytics </h2>
+ 
+    <hr>
+    <div class="row">
+
+        <div class="col-sm-4">
+            <canvas id="activityName-chart" style="width: 100px !important;"></canvas>
+        </div>
+        
+        
+    </div>
+    {{ block.super }}
+{% endblock %}

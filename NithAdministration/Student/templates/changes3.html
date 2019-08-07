@@ -1,0 +1,146 @@
+{% extends "admin/change_list.html" %}
+{% load staticfiles %}
+{% block extrahead %}
+<!-- <link rel="shortcut icon" href="/static/logo1.png" /> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/admin/js/urlify.js"></script>
+    <script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script>
+        var randomColorGenerator = function () {
+            return '#' + (Math.random().toString(16) + '0000000').slice(2, 8);
+        };
+        var options = {
+            responsive: true,
+            maintainAspectRatio: true,
+            legend: {
+                position: 'left'
+            },
+            title: {
+                display: true
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            }
+        };
+        window.onload = function () {
+
+            // var ctx = document.getElementById("examMarks-chart");
+            // {% regroup cl.queryset|dictsort:"examMarks" by examMarks as examMarks_list %}
+            // var lineChart = new Chart(ctx, {
+            //     type: 'bar',
+            //     data: {
+            //         labels: [{% for examMarks in examMarks_list %}'{{ examMarks.grouper }}',{% endfor %}],
+            //         datasets: [{
+            //             label: 'Exam_Score',
+            //             data: [{% for examMarks in examMarks_list %}'{{ examMarks.list|length }}',{% endfor %}],
+            //             backgroundColor: [{% for examMarks in examMarks_list %}randomColorGenerator(),{% endfor %}]
+                  
+            //         }]
+            //     },
+            //     options: options
+                    
+       
+            
+            // });
+            ctx = document.getElementById("exam-chart");
+            {% regroup cl.queryset|dictsort:"exam" by exam as exam_list %}
+            lineChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [{% for exam in exam_list %}'{{ exam.grouper }}',{% endfor %}],
+                    datasets: [{
+                        label: 'No Of Students in exam',
+                        data: [{% for exam in exam_list %}'{{ exam.list|length }}',{% endfor %}],
+                        backgroundColor: [{% for exam in exam_list %}randomColorGenerator(),{% endfor %}]
+                    }]
+                },options:{
+                    legend: {
+                              position: 'left'
+                        },
+                    title: {
+                            display: true,
+                            text: '1.No of students in particular exam'
+                        }
+                   }
+            });
+
+            
+
+            // ctx = document.getElementById("exam2-chart");
+            // {% regroup cl.queryset|dictsort:"exam2" by exam2 as exam2_list %}
+            // lineChart = new Chart(ctx, {
+            //     type: 'doughnut',
+            //     data: {
+            //         labels: [{% for exam2 in exam2_list %}'{{ exam2.grouper }}',{% endfor %}],
+            //         datasets: [{
+            //             data: [{% for exam2 in exam2_list %}'{{ exam2.list|length }}',{% endfor %}],
+            //             backgroundColor: [{% for exam2 in exam2_list %}randomColorGenerator(),{% endfor %}]
+            //         }]
+            //     }, options: options
+            // });
+
+            // ctx = document.getElementById("exam3-chart");
+            // {% regroup cl.queryset|dictsort:"exam3" by exam3 as exam3_list %}
+            // lineChart = new Chart(ctx, {
+            //     type: 'doughnut',
+            //     data: {
+            //         labels: [{% for exam3 in exam3_list %}'{{ exam3.grouper }}',{% endfor %}],
+            //         datasets: [{
+            //             data: [{% for exam3 in exam3_list %}'{{ exam3.list|length }}',{% endfor %}],
+            //             backgroundColor: [{% for exam3 in exam3_list %}randomColorGenerator(),{% endfor %}]
+            //         }]
+            //     }, options: options
+            // });
+            
+            //    var ctx = document.getElementById("attendance-chart");
+            // {% regroup cl.queryset|dictsort:"attendance" by attendance as attendance_list %}
+            // var lineChart = new Chart(ctx, {
+            //     type: 'bar',
+            //     data: {
+            //         labels: [{% for attendance in attendance_list %}'{{ attendance.grouper }}',{% endfor %}],
+            //         datasets: [{
+            //             data: [{% for attendance in attendance_list %}'{{ attendance.list|length }}',{% endfor %}],
+            //             backgroundColor: [{% for attendance in attendance_list %}randomColorGenerator(),{% endfor %}]
+            //         }]
+            //     },
+            //     options: options
+            // });
+           
+        }
+        
+    </script>
+{% endblock %}
+{% block content %}
+
+<div id="content-main">
+    <ul class="object-tools">
+        <li><a href='/Student/otherexam/import/' class="import_link">Import</a></li>
+        <li><a href="/Student/otherexam/export/?" class="export_link">Export</a></li>            
+    </ul>
+
+     <h2>Analytics </h2>
+ 
+    <hr>
+    <div class="row">
+
+        <div class="col-sm-4">
+            <canvas id="exam-chart" style="width: 100px !important;"></canvas>
+        </div>
+   
+        
+        <!-- <div class="col-sm-4">
+            <canvas id="exam3-chart" style="width: 100px !important;"></canvas>
+        </div>  -->
+        
+    </div>
+    {{ block.super }}
+{% endblock %}

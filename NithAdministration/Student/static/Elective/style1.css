@@ -1,0 +1,25 @@
+h1
+{
+    color: rgba(0, 0, 255, 0.473);
+    font-family: courier;
+    text-align: center;
+    padding-top:10px;   
+}
+hr 
+{
+    border: none;
+    border-top:1px solid;
+    width: 80%;
+}
+p 
+{
+    padding-top:10px;
+    padding-left:130px;
+    padding-right:130px;
+    text-align: justify;
+}
+ul {
+    padding-top:5px;
+    padding-left:150px;
+    padding-right:130px;
+  }

@@ -1,0 +1,110 @@
+{% extends "admin/change_list.html" %}
+{% load staticfiles %}
+{% load static %}
+{% block extrahead %}
+<!-- <link rel="shortcut icon" href="/static/logo1.png" /> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="/static/admin/js/core.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="/static/admin/js/actions.js"></script>
+<script type="text/javascript" src="/static/admin/js/urlify.js"></script>
+<script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
+<script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script>
+        var randomColorGenerator = function () {
+            return '#' + (Math.random().toString(16) + '0000000').slice(2, 8);
+        };
+        var options = {
+            responsive: true,
+            maintainAspectRatio: true,
+            legend: {
+                position: 'left'
+            },
+            title: {
+                display: true
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            }
+        };
+        window.onload = function () {
+
+
+            var ctx = document.getElementById("gender-chart");
+            {% regroup cl.queryset|dictsort:"gender" by gender as gender_list %}
+            var myBarChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: [{% for gender in gender_list %}'{{ gender.grouper }}',{% endfor %}],
+                    datasets: [{
+                        label: 'No Of Students that give suggestion',
+                        data: [{% for gender in gender_list %}'{{ gender.list|length }}',{% endfor %}],
+                        backgroundColor: [{% for gender in gender_list %}randomColorGenerator(),{% endfor %}]
+                    }]
+                }, options:{
+                legend: {
+                              position: 'left'
+                        },
+                    title: {
+                            display: true,
+                            text: '1.Suggestion ratio by gender'
+                        }
+                   }
+            });
+        var ctx = document.getElementById("suggestions-chart");
+        ctx.height = 800;
+            {% regroup cl.queryset|dictsort:"suggestions" by suggestions as suggestions_list %}
+            lineChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [{% for suggestions in suggestions_list %}'{{ suggestions.grouper }}',{% endfor %}],
+                    datasets: [{
+                        label: 'Suggestions',
+                        data: [{% for suggestions in suggestions_list %}'{{ suggestions.list|length }}',{% endfor %}],
+                        backgroundColor: [{% for suggestions in suggestions_list %}randomColorGenerator(),{% endfor %}]
+                    }]
+                },options:{
+                legend: {
+                              position: 'left'
+                        },
+                    title: {
+                            display: true,
+                            text: '2.suggestion analytics'
+                        }
+                   }
+            });
+           
+        }
+        
+    </script>
+{% endblock %}
+{% block content %}
+<div id="content-main">
+    
+        <ul class="object-tools">    
+      <li><a href='/Student/suggestions/import/' class="import_link">Import</a></li>
+      <li><a href="/Student/suggestions/export/?" class="export_link">Export</a></li>
+
+        <li>
+                  
+    </ul>
+
+     <h2> Analytics </h2>
+ 
+    <hr>
+    <div class="row">
+
+        <div class="col-sm-4">
+            <canvas id="gender-chart" style="width: 100px !important;"></canvas>
+        </div>
+        <div class="col-sm-4"  style="width: 500px ">
+            <canvas id="suggestions-chart" style="width: 1000px !important;"></canvas>
+        </div>
+    </div>
+    {{ block.super }}
+{% endblock %}
